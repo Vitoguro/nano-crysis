@@ -1,0 +1,11 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "mDoGdBB3r9f8gEwDd",
+			"name": "Nanotech",
+			"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+			"cost": -10
+		}
+	]
+}

@@ -1,0 +1,1803 @@
+{
+	"version": 5,
+	"id": "Bd_-zgAmCkVhTyi9Q",
+	"traits": [
+		{
+			"id": "TtSy5_sZiW0rS6k5m",
+			"name": "Abominação",
+			"children": [
+				{
+					"id": "TNw-8HVN8JEn3C9Ye",
+					"name": "Atributos",
+					"children": [
+						{
+							"id": "t0eSHmC5lucKRwe6m",
+							"name": "Increased Strength",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m_9U5BQfSQKyEuUti",
+									"name": "No Fine Manipulators",
+									"reference": "B15",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "m4hwwvpit2Fb4P60Q",
+									"name": "Size",
+									"reference": "B15",
+									"levels": 1,
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mGqWBgQQ5F42q1NDy",
+									"name": "Super-Effort",
+									"reference": "SU24",
+									"cost": 300,
+									"disabled": true
+								}
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "st",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 50
+							}
+						},
+						{
+							"id": "tBou86prkn_W760fh",
+							"name": "Increased Dexterity",
+							"reference": "B15",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mRyh6vRoJOuG0lWbN",
+									"name": "No Fine Manipulators",
+									"cost": -40,
+									"disabled": true
+								}
+							],
+							"points_per_level": 20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "dx",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 40
+							}
+						},
+						{
+							"id": "tSEaHdWFGE9Yas7h0",
+							"name": "Decreased Intelligence",
+							"reference": "B15",
+							"tags": [
+								"Attribute",
+								"Disadvantage",
+								"Mental"
+							],
+							"points_per_level": -20,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "iq",
+									"amount": -1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 4,
+							"calc": {
+								"points": -80
+							}
+						},
+						{
+							"id": "tQ5H14z2NOvRY1KUQ",
+							"name": "Increased Perception",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental",
+								"Physical"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "per",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 5,
+							"calc": {
+								"points": 25
+							}
+						},
+						{
+							"id": "tf7y0fFC0wGr6LQue",
+							"name": "Increased Will",
+							"reference": "B16",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Mental"
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "will",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 4,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "taMPsbEWW2caSuS6o",
+							"name": "Increased Health",
+							"reference": "B14",
+							"tags": [
+								"Advantage",
+								"Attribute",
+								"Physical"
+							],
+							"points_per_level": 10,
+							"features": [
+								{
+									"type": "attribute_bonus",
+									"attribute": "ht",
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 2,
+							"calc": {
+								"points": 20
+							}
+						}
+					],
+					"calc": {
+						"points": 75
+					}
+				},
+				{
+					"id": "tdTd9L08K77uXI_Tm",
+					"name": "Combat Reflexes",
+					"reference": "B43",
+					"notes": "Never freeze",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "Enhanced Time Sense"
+								}
+							}
+						]
+					},
+					"base_points": 15,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "starts_with",
+								"qualifier": "fast-draw"
+							},
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "dodge",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "parry",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "block",
+							"amount": 1
+						},
+						{
+							"type": "attribute_bonus",
+							"attribute": "fright_check",
+							"amount": 2
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on all IQ rolls to wake up or to recover from surprise or mental stun",
+							"amount": 6
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to initiative rolls for your side (+2 if you are the leader)",
+							"amount": 1
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tmYau0xnR9HHyc5Bm",
+					"name": "Doesn't Sleep",
+					"reference": "B50",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 20,
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "txoz2dd3ZcOMHVBvP",
+					"name": "High Pain Threshold",
+					"reference": "B59",
+					"notes": "Never suffer shock penalties when injured",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 10,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "on all HT rolls to avoid knockdown and stunning",
+							"amount": 3
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "to resist torture",
+							"amount": 3
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "tCzKcxlkjG9nz9qVm",
+					"name": "Unfazeable",
+					"reference": "B95",
+					"notes": "Exempt from fright checks. Reaction modifiers do not affect you.",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"modifiers": [
+						{
+							"id": "mEe0Z0Z9aQgRJN1rT",
+							"name": "Familiar Horrors",
+							"reference": "H20",
+							"cost": -50,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "t0CuM7xIiHWvb2d5r",
+					"name": "Indomitable",
+					"reference": "B60",
+					"notes": "Impossible to influence through ordinary words or actions",
+					"tags": [
+						"Advantage",
+						"Mental"
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tSWVuencJkppmx2_L",
+					"name": "Injury Tolerance",
+					"reference": "B60,P52,MA45",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m8QKnap47SRg0kUKU",
+							"name": "Diffuse",
+							"reference": "B60",
+							"notes": "Immune to crippling injuries. Brain, Vitals and Groin cannot be targeted. Most foes cannot slam or grapple you (GM's decision). Do not bleed. Unaffected by blood-borne toxins. Immune to attacks that rely on cutting off blood to part of your body. Impaling and piercing attacks of any size never do more than 1 HP of injury, regardless of penetrating damage. Other attacks never do more than 2 HP of injury. Exception: Area-effect, cone, and explosion attacks cause normal injury",
+							"cost": 100,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mbGyP9cqZYXe_CzT8",
+							"name": "Homogenous",
+							"reference": "B60",
+							"notes": "Altered wound modifiers: imp \u0026 pi++ are x1/2, pi+ is x1/3, pi is x1/5, pi- is x1/10",
+							"cost": 40,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mI6bPFVX6ZkbX9779",
+							"name": "No Blood",
+							"reference": "B61",
+							"notes": "Do not bleed, unaffected by blood-borne toxins, immune to attacks that rely on cutting off blood to part of your body",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mSv2DbpG7azymR5nE",
+							"name": "No Brain",
+							"reference": "B61",
+							"notes": "Brain cannot be targeted. Blows to the skull or eye are treated like blows to the face, except that eye injury can still cripple the eye",
+							"cost": 5,
+							"cost_type": "points"
+						},
+						{
+							"id": "mDi5ZEi6W1q09k6wF",
+							"name": "No Eyes",
+							"reference": "B61",
+							"notes": "Eyes may not be targeted. Immune to blinding attacks",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mNUh4iCQDWSyFTamu",
+							"name": "No Head",
+							"reference": "B61",
+							"notes": "Skull, Brain and Face cannot be targeted",
+							"cost": 7,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mugFK8sIKoHcbDrdo",
+							"name": "No Neck",
+							"reference": "B61",
+							"notes": "Neck may not be targeted and cannot be decapitated, choked or strangled",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mVko2eSVI2Lu_Pksb",
+							"name": "No Vitals",
+							"reference": "B61",
+							"notes": "Attacks to the Vitals or Groin are treated as attacks to the Torso",
+							"cost": 5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mwf0FaZG4idwScwAz",
+							"name": "Unliving",
+							"reference": "B61",
+							"notes": "Altered wound modifiers: imp \u0026 pi++ are x1, pi+ is x1/2, pi is x1/3, pi- is x1/5",
+							"cost": 20,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": 25
+					}
+				},
+				{
+					"id": "tiL9nF3vkF4mB6TMS",
+					"name": "Reprogrammable",
+					"reference": "B150",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Mental"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "t9cZ-Pyozq-iPDQIq",
+					"name": "Unaging",
+					"reference": "B95,PSI18",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mfqBx_eve7gxQq5Rz",
+							"name": "Age Control",
+							"reference": "B95",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "m4vSWGgrJxye7QJCS",
+							"name": "IQ Only",
+							"reference": "RSWL24",
+							"cost": -75,
+							"disabled": true
+						},
+						{
+							"id": "m5rviabx6A7GJsWkm",
+							"name": "Halt Aging, Weekly",
+							"reference": "PSI18",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mkxq1x3lCS1BqH8MC",
+							"name": "Halt Aging, Monthly",
+							"reference": "PSI18",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mHPGOm0-zsp6wB3tO",
+							"name": "Halt Aging, Yearly",
+							"reference": "PSI18",
+							"cost": 130,
+							"disabled": true
+						},
+						{
+							"id": "mx1WSerFfRkQxK19j",
+							"name": "Life Extension",
+							"reference": "PSI18",
+							"cost": -30,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tsmpRX9Cnnc-yByMo",
+					"name": "Flexibility",
+					"reference": "B56,MA44",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"base_points": 5,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "climbing"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "escape"
+							},
+							"amount": 3
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "erotic art"
+							},
+							"amount": 3
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "in penalties may be ignored when due to close quarters",
+							"amount": -3
+						}
+					],
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "tp5sVoNi4ypZJh_2N",
+					"name": "Odious Personal Habit",
+					"reference": "B22",
+					"notes": "Devour Humans",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "m0Pqij4YC659Y8vLZ",
+							"name": "-1 Reaction",
+							"reference": "B22",
+							"cost": -5,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mMoKNOHGfJeXsdPsE",
+							"name": "-2 Reaction",
+							"reference": "B22",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mzwzg5HOBrogECluc",
+							"name": "-3 Reaction",
+							"reference": "B22",
+							"cost": -15,
+							"cost_type": "points"
+						}
+					],
+					"calc": {
+						"points": -15
+					}
+				},
+				{
+					"id": "tJoFHxp-8PkrPzRwE",
+					"name": "Social Stigma (Dead)",
+					"reference": "B155",
+					"tags": [
+						"Disadvantage",
+						"Social"
+					],
+					"base_points": -20,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "intimidation"
+							},
+							"amount": 1
+						},
+						{
+							"type": "reaction_bonus",
+							"situation": "from others",
+							"amount": -4
+						}
+					],
+					"calc": {
+						"points": -20
+					}
+				},
+				{
+					"id": "t4_2f03iQl9260rF8",
+					"name": "Appearance",
+					"reference": "B21",
+					"tags": [
+						"Advantage",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "moNvWwI2VkIdtTA71",
+							"name": "Attractive",
+							"reference": "B21",
+							"cost": 4,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m7nhkAhNRU181rpZo",
+							"name": "Average",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mP47ZCiiqdpY9TLbH",
+							"name": "Beautiful",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mvQBbgqarGWG1S66Z",
+							"name": "Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m8-HpPJ3eBI5ptcWk",
+							"name": "Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mv-O_CqtfKDlUJXXX",
+							"name": "Handsome",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mOl_Weh1r0lKLUa4q",
+							"name": "Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m3Q3nx3vUn5t2HW-0",
+							"name": "Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 12,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 3
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mzRMF7Uk3Wqag8Mso",
+							"name": "Hideous",
+							"reference": "B21",
+							"cost": -16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mFKC1iy8VI2XgpSJ_",
+							"name": "Horrific",
+							"reference": "B21",
+							"cost": -24,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mWRQ5ZTFGhWD9HIqK",
+							"name": "Impressive",
+							"reference": "B21",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "marrjHic2bjrPHsP7",
+							"name": "Monstrous",
+							"reference": "B21",
+							"cost": -20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -5
+								}
+							]
+						},
+						{
+							"id": "m1YnTPhbzqVKDh4Gj",
+							"name": "Off-the-Shelf Looks",
+							"reference": "B21",
+							"notes": "Halves the usual reaction bonus - adjust manually",
+							"cost": -50,
+							"disabled": true
+						},
+						{
+							"id": "m4CbUJI1Dp9Ja7CxV",
+							"name": "Transcendent",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 8
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m6YCXbkl4m44LpZAu",
+							"name": "Transcendent (Androgynous)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mzQITGppt2E4LTZdW",
+							"name": "Transcendent (Impressive)",
+							"reference": "B21",
+							"cost": 20,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 5
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m8kcNcFE0V6Wk2_K4",
+							"name": "Ugly",
+							"reference": "B21",
+							"cost": -8,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -2
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m4O-JLMhA_cilErWx",
+							"name": "Unattractive",
+							"reference": "B21",
+							"cost": -4,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": -1
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mm67JHmqbhWjc2Vau",
+							"name": "Universal",
+							"reference": "B21",
+							"cost": 25
+						},
+						{
+							"id": "mW3-jNFFB9o0PEJ9s",
+							"name": "Very Beautiful",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m0k1BQtpV7emyz9yq",
+							"name": "Very Beautiful (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mcxSWnAjvP5R_oQUH",
+							"name": "Very Beautiful (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "m7uPHTC1X4ywDcyef",
+							"name": "Very Handsome",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from those attracted to members of your sex, +2 from everyone else. Exception: Members of the same sex with reason to dislike you (more than -4 in reaction penalties regardless of bonuses) resent your good looks and react at -2 instead.",
+									"amount": 6
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "mJuzqmabDipVign0v",
+							"name": "Very Handsome (Androgynous)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						},
+						{
+							"id": "miuHAsooLduw-Ncra",
+							"name": "Very Handsome (Impressive)",
+							"reference": "B21",
+							"cost": 16,
+							"cost_type": "points",
+							"features": [
+								{
+									"type": "reaction_bonus",
+									"situation": "from others",
+									"amount": 4
+								}
+							],
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -25
+					}
+				},
+				{
+					"id": "txRNA88lNHQMySMxG",
+					"name": "Cannot Learn",
+					"reference": "B125",
+					"tags": [
+						"Disadvantage",
+						"Mental"
+					],
+					"base_points": -30,
+					"calc": {
+						"points": -30
+					}
+				},
+				{
+					"id": "trc1_ZMqKCpw1impv",
+					"name": "Disturbing Voice",
+					"reference": "B132",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"prereqs": {
+						"type": "prereq_list",
+						"all": true,
+						"prereqs": [
+							{
+								"type": "trait_prereq",
+								"has": false,
+								"name": {
+									"compare": "is",
+									"qualifier": "voice"
+								}
+							}
+						]
+					},
+					"base_points": -10,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "diplomacy"
+							},
+							"amount": -2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "fast-talk"
+							},
+							"amount": -2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "performance"
+							},
+							"amount": -2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "public speaking"
+							},
+							"amount": -2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "sex appeal"
+							},
+							"amount": -2
+						},
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"name": {
+								"compare": "is",
+								"qualifier": "singing"
+							},
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tNeHnvfTZMQP2UMU0",
+					"name": "Slow Healing",
+					"reference": "B155",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"points_per_level": -5,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tUf8-XGabNciumSNF",
+					"name": "Bad Smell",
+					"reference": "B124",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -10,
+					"features": [
+						{
+							"type": "reaction_bonus",
+							"situation": "from most people and animals (although pests or carrion-eating scavengers might be attracted to you!)",
+							"amount": -2
+						}
+					],
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "t6MveX0jlCIGrvIgC",
+					"name": "Infectious Attack",
+					"reference": "B140",
+					"tags": [
+						"Disadvantage",
+						"Physical",
+						"Supernatural"
+					],
+					"base_points": -5,
+					"calc": {
+						"points": -5
+					}
+				},
+				{
+					"id": "tKIxgKS9khbRPhgRN",
+					"name": "Bestial",
+					"reference": "B124",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Mental"
+					],
+					"base_points": -10,
+					"calc": {
+						"points": -10
+					}
+				},
+				{
+					"id": "tFTkSjnUpy_fLBC3u",
+					"name": "Blindness",
+					"reference": "B124",
+					"notes": "Cannot target hit locations",
+					"tags": [
+						"Disadvantage",
+						"Physical"
+					],
+					"base_points": -50,
+					"features": [
+						{
+							"type": "skill_bonus",
+							"selection_type": "skills_with_name",
+							"tags": {
+								"compare": "contains",
+								"qualifier": "combat"
+							},
+							"amount": -6
+						}
+					],
+					"calc": {
+						"points": -50
+					}
+				},
+				{
+					"id": "t4yDVgj4iW06xFKGs",
+					"name": "Scanning Sense",
+					"reference": "B81,P72,PSI17",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mXEZUgxysoLUDJLc_",
+							"name": "Imaging Radar",
+							"reference": "B81",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mpiLPiUo0XogBcDOn",
+							"name": "Radar",
+							"reference": "B81",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mvaXNt1vlnZ_U33t_",
+							"name": "Ladar",
+							"reference": "B81",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mLKLBQKhhumcfKXW6",
+							"name": "Para-Radar",
+							"reference": "B81",
+							"cost": 40,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "muZf7_Nr6p6U_3135",
+							"name": "Sonar",
+							"reference": "B81",
+							"cost": 20,
+							"cost_type": "points"
+						},
+						{
+							"id": "mWAupamvwtfSSQT-6",
+							"name": "Extended Arc",
+							"reference": "B82",
+							"notes": "240°",
+							"cost": 75,
+							"disabled": true
+						},
+						{
+							"id": "mrOWf845dV82bEYhd",
+							"name": "Extended Arc",
+							"reference": "B82",
+							"notes": "360°",
+							"cost": 125,
+							"disabled": true
+						},
+						{
+							"id": "m9tb7RGWDN_OdLVwH",
+							"name": "Low-Probability Intercept",
+							"reference": "B82",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mHjqauL-cM_AYL7ww",
+							"name": "Multi-Mode",
+							"reference": "B82",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mcBuTaCUVggiLdk3u",
+							"name": "Penetrating",
+							"reference": "B82",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "m2N3ejbGwi30Of0Fc",
+							"name": "Targeting",
+							"reference": "B82",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "mUm9wiIFVpmRyHMwO",
+							"name": "Targeting Only",
+							"reference": "B82",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mDIOqS42p_eoMoSLD",
+							"name": "Active IR",
+							"reference": "P72",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mLg0DIwGn12ANOrZG",
+							"name": "T-Ray Vision",
+							"reference": "P72",
+							"cost": 25,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mnwC9IVlFLhS3mG_Z",
+							"name": "Bio-Scan",
+							"reference": "P72",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mGJFhLnP8xzkXot1z",
+							"name": "No Intercept",
+							"reference": "P72",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "m-QGBFDt5wzJyl4pJ",
+							"name": "Scanner",
+							"reference": "P72",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "msv4a9vZQIrgXMzEa",
+							"name": "Field Sense",
+							"reference": "SU27",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mCsYEZQV1SeB5HajJ",
+							"name": "Extra-Sensory Awareness",
+							"reference": "PSI17",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": 20
+					}
+				},
+				{
+					"id": "tyrpcmTyoB5v9MVZH",
+					"name": "Discriminatory Hearing",
+					"reference": "B49,P47",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "mH2vjCn87O-cNBY0F",
+							"name": "Only underwater",
+							"reference": "B49",
+							"cost": -30,
+							"disabled": true
+						},
+						{
+							"id": "mXwYHpvvqqEoVnPbR",
+							"name": "Profiling",
+							"reference": "P47",
+							"cost": 50,
+							"disabled": true
+						}
+					],
+					"base_points": 15,
+					"features": [
+						{
+							"type": "conditional_modifier",
+							"situation": "to Shadowing skill when following a noisy target",
+							"amount": 4
+						},
+						{
+							"type": "conditional_modifier",
+							"situation": "on any task that utilizes hearing",
+							"amount": 4
+						}
+					],
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "tYBOw-TRQzeOMLUbl",
+					"source": {
+						"library": "richardwilkes/gcs_master_library",
+						"path": "Basic Set\\Basic Set Traits.adq",
+						"id": "tnmgpRDKPeMoTM6Qu"
+					},
+					"name": "Fragile (Unnatural)",
+					"reference": "B137",
+					"notes": "Automatically fail HT roll to stay alive if reduced to -HP or below",
+					"tags": [
+						"Disadvantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": -50,
+					"calc": {
+						"points": -50
+					}
+				},
+				{
+					"id": "tps2drdvj5laliKHp",
+					"name": "Protected Sense (Hearing)",
+					"reference": "B78,P69",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"base_points": 5,
+					"calc": {
+						"points": 5
+					}
+				},
+				{
+					"id": "thpxWOtu39VwMnsQc",
+					"name": "Wealth",
+					"reference": "B25",
+					"tags": [
+						"Advantage",
+						"Disadvantage",
+						"Social"
+					],
+					"modifiers": [
+						{
+							"id": "mnC9XiiFzSgx0BBSE",
+							"name": "Dead Broke",
+							"reference": "B25",
+							"notes": "Starting wealth is $0",
+							"cost": -25,
+							"cost_type": "points"
+						},
+						{
+							"id": "mE83SmDOkUCyV1uZx",
+							"name": "Poor",
+							"reference": "B25",
+							"notes": "Starting wealth is 1/5 average",
+							"cost": -15,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mIBNRvX7FI0Fu897Q",
+							"name": "Struggling",
+							"reference": "B25",
+							"notes": "Starting wealth is 1/2 average",
+							"cost": -10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mljlfvKdL72OoSSA5",
+							"name": "Average",
+							"reference": "B25",
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m8Jjvg11n6QJvhKqh",
+							"name": "Comfortable",
+							"reference": "B25",
+							"notes": "Starting wealth is 2x average",
+							"cost": 10,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "miSbQqmwi5WtHCUfT",
+							"name": "Wealthy",
+							"reference": "B25",
+							"notes": "Starting wealth is 5x average",
+							"cost": 20,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mK1tS6ajcN25YllL5",
+							"name": "Very Wealthy",
+							"reference": "B25",
+							"notes": "Starting wealth is 20x average",
+							"cost": 30,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "m4W8-uMJKnIFx8M0h",
+							"name": "Filthy Rich",
+							"reference": "B25",
+							"notes": "Starting wealth is 100x average",
+							"cost": 50,
+							"cost_type": "points",
+							"disabled": true
+						}
+					],
+					"calc": {
+						"points": -25
+					}
+				},
+				{
+					"id": "tkcbhBjAuQgEvCYQH",
+					"name": "Nanite Armor, Damage Resistance",
+					"reference": "B47,P45,MA43,PSI14",
+					"tags": [
+						"Advantage",
+						"Exotic",
+						"Physical"
+					],
+					"modifiers": [
+						{
+							"id": "muAkL-0nLdodvcb57",
+							"name": "Force Field",
+							"reference": "B47",
+							"cost": 20,
+							"disabled": true
+						},
+						{
+							"id": "m-kRnLpDDe7BC9VLv",
+							"name": "Hardened",
+							"reference": "B47",
+							"levels": 1,
+							"cost": 20
+						},
+						{
+							"id": "mHTnJGle3vhTjW6nW",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances @Trait@",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mMFQ9QpZFz8b9HJkS",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Healing only",
+							"cost": 80,
+							"disabled": true
+						},
+						{
+							"id": "mA1cgcfDDmApdrbXg",
+							"name": "Absorption",
+							"reference": "B46",
+							"notes": "Enhances any trait",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mU5B9vkJej8P-gKVu",
+							"name": "Reflection",
+							"reference": "B47",
+							"cost": 100,
+							"disabled": true
+						},
+						{
+							"id": "mdDMZiaXRPWQp7SdO",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Rare@",
+							"cost": -1,
+							"cost_type": "points",
+							"disabled": true
+						},
+						{
+							"id": "mYSyEEdn3zYqYrj-d",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Occasional@",
+							"cost": -5,
+							"disabled": true
+						},
+						{
+							"id": "mmrEg85EuBbuADEED",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Common@",
+							"cost": -10,
+							"disabled": true
+						},
+						{
+							"id": "m9JTBuBpjly14sa4o",
+							"name": "Bane",
+							"reference": "H14",
+							"notes": "@Very Common@",
+							"cost": -15,
+							"disabled": true
+						},
+						{
+							"id": "mPtAUGhplg5hCoBxw",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "Front",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mHNb5N3ju6W6S_jKj",
+							"name": "Flexible",
+							"reference": "B47",
+							"cost": -20
+						},
+						{
+							"id": "mE63z5Iet7uLxgV5H",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Very Common Attack Form@",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mC_TlPxAdJacBwHdq",
+							"name": "Semi-Ablative",
+							"reference": "B47",
+							"cost": -20,
+							"disabled": true
+						},
+						{
+							"id": "mWLllMphPAnArl4PI",
+							"name": "Can't wear armor",
+							"reference": "B47",
+							"cost": -40
+						},
+						{
+							"id": "mVIgNv90nKepPiu9f",
+							"name": "Directional",
+							"reference": "B47",
+							"notes": "@Direction: Back, Right, Left, Top or Underside@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m2X95L76yf68FIevy",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Common Attack Form@",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "mzx7KmaYJ5F5JTE70",
+							"name": "Tough Skin",
+							"notes": "Effects that just require skin contact or a scratch ignore this DR",
+							"cost": -40,
+							"disabled": true
+						},
+						{
+							"id": "m7fzYJLq6gK28t1lv",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Occasional Attack Form@",
+							"cost": -60,
+							"disabled": true
+						},
+						{
+							"id": "mlN7U4G8G6AC9xfvT",
+							"name": "Ablative",
+							"reference": "B47",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mCjNUAeej9c-GZ6T5",
+							"name": "Limited",
+							"reference": "B46",
+							"notes": "@Rare Attack Form@",
+							"cost": -80,
+							"disabled": true
+						},
+						{
+							"id": "mgZON_5B61uIAvuuB",
+							"name": "Laminate",
+							"reference": "RSWL18",
+							"cost": 10,
+							"disabled": true
+						},
+						{
+							"id": "mqILIcHLIa76ZtEa1",
+							"name": "Malediction-Proof",
+							"reference": "PSI14",
+							"cost": 50,
+							"disabled": true
+						},
+						{
+							"id": "mgIlxWD-hPsFFfj3x",
+							"name": "Maledictions Only",
+							"reference": "PSI14",
+							"disabled": true
+						},
+						{
+							"id": "mopjVEx2dQ2EyF8vL",
+							"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+							"reference": "B47",
+							"cost": -10,
+							"disabled": true
+						}
+					],
+					"points_per_level": 5,
+					"features": [
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"skull"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"face"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"neck"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"torso"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"vitals"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"groin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"arm"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"hand"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"leg"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"foot"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"tail"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"wing"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"fin"
+							],
+							"amount": 1,
+							"per_level": true
+						},
+						{
+							"type": "dr_bonus",
+							"locations": [
+								"brain"
+							],
+							"amount": 1,
+							"per_level": true
+						}
+					],
+					"can_level": true,
+					"levels": 10,
+					"calc": {
+						"points": 30
+					}
+				}
+			],
+			"calc": {
+				"points": 0
+			}
+		}
+	]
+}

@@ -1,0 +1,5584 @@
+{
+	"version": 5,
+	"rows": [
+		{
+			"id": "tZT7l2Qm1sqdN0oO0",
+			"name": "Energy Reserve (Nanotech)",
+			"reference": "P119",
+			"tags": [
+				"Advantage",
+				"Attribute",
+				"Exotic",
+				"Physical"
+			],
+			"modifiers": [
+				{
+					"id": "miLPQU1yXFj__iK4j",
+					"name": "Abilities Only",
+					"reference": "P119",
+					"cost": -10,
+					"disabled": true
+				},
+				{
+					"id": "m6caJGyEDN_qDUCU1",
+					"name": "One Power",
+					"reference": "P119",
+					"cost": -50,
+					"disabled": true
+				},
+				{
+					"id": "mtWo1Um3h1sPrOmBr",
+					"name": "Slow Recharge",
+					"reference": "P119",
+					"notes": "1/hour",
+					"cost": -20,
+					"disabled": true
+				},
+				{
+					"id": "m3qQpspOCta8wAr9K",
+					"name": "Slow Recharge",
+					"reference": "P119",
+					"notes": "1/day",
+					"cost": -60,
+					"disabled": true
+				},
+				{
+					"id": "mnoxBkt1bvyGXg6tY",
+					"name": "Special Recharge",
+					"reference": "P119",
+					"cost": -70,
+					"disabled": true
+				},
+				{
+					"id": "mPasT9nEdiAh02iUF",
+					"name": "Special Recharge",
+					"reference": "P119",
+					"notes": "1/s bleed",
+					"cost": -80,
+					"disabled": true
+				},
+				{
+					"id": "molZQ6wU4BfFKJFLY",
+					"name": "Stunts Only",
+					"reference": "P119",
+					"cost": -10,
+					"disabled": true
+				}
+			],
+			"points_per_level": 3,
+			"can_level": true,
+			"levels": 1,
+			"calc": {
+				"points": 3
+			}
+		},
+		{
+			"id": "TS10pNx0aRYGWrn-c",
+			"name": "Mutation",
+			"children": [
+				{
+					"id": "tPkNo2_Byk2haJ-kq",
+					"name": "Mutation Talent",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Power"
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10
+					}
+				},
+				{
+					"id": "TrLXkuwHg6GsUKV2Z",
+					"name": "Supercharging",
+					"children": [
+						{
+							"id": "tVYQj2b_x63Q9U-pi",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tQcU6Xo1BzIIerEX3"
+							},
+							"name": "Altered Time Rate",
+							"reference": "B38,P41,MA42",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mIluNL8MDnMHpVSLk",
+									"name": "Super-Speed",
+									"reference": "P42",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mldJktYppNhyCLe2N",
+									"name": "Non-Combat Speed",
+									"reference": "P42",
+									"cost": -60,
+									"disabled": true
+								},
+								{
+									"id": "m1NL9nP-vvTzd6_gH",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mb8dKIbPtFmqDLYaM"
+									},
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"levels": 1,
+									"cost": -5
+								},
+								{
+									"id": "mkVGGAoyzGD678do-",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mKEOStlk_5M2lC_K3"
+									},
+									"name": "Nuisance Effect",
+									"reference": "B112,P104",
+									"notes": "Touch is painfullt hot",
+									"cost": -5
+								},
+								{
+									"id": "mfE9qW_pFx7UmhlbS",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"points_per_level": 100,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 80
+							}
+						},
+						{
+							"id": "tIcowqMj5NLDCH7xU",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tuvstBu3EtRU0qAa9"
+							},
+							"name": "Innate Attack (Burn)",
+							"reference": "B61,P53,MA45",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mtkKD3cJ-2D29KmL_",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 sec",
+									"levels": 1,
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mDi-HaVpiRucPHgid",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "10 sec",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "myfp85o_GJRz7KIJb",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 min",
+									"levels": 1,
+									"cost": 40,
+									"disabled": true
+								},
+								{
+									"id": "mwCVGrWFLCY3mdk_6",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 hr",
+									"levels": 1,
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mcpQQYoag61j2CrlE",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 day",
+									"levels": 1,
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mXjpb5-jNKd8RtZjB",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 sec; Resistible",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mnsCBZMxai-A2CoWv",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "10 sec; Resistible",
+									"levels": 1,
+									"cost": 25,
+									"disabled": true
+								},
+								{
+									"id": "mv6gz8YXOJUT-tlD3",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 min; Resistible",
+									"levels": 1,
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mE5nn74_Ax0ANyVZW",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 hr; Resistible",
+									"levels": 1,
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "m9A-EZ-WzEukfYD_H",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 day; Resistible",
+									"levels": 1,
+									"cost": 5,
+									"disabled": true
+								},
+								{
+									"id": "mews1Icjhk4h06v5B",
+									"name": "Contagious",
+									"reference": "B103",
+									"notes": "Mildly",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mai8gJ7XyB-nkiHXZ",
+									"name": "Contagious",
+									"reference": "B103",
+									"notes": "Highly",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mP_gr2aJzsErAv3sR",
+									"name": "Double Blunt Trauma",
+									"reference": "B104",
+									"notes": "1HP per 10 dmg",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mE1YyoIesLozVhCbl",
+									"name": "Explosion",
+									"reference": "B104",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mSQyuHcMGOo1Hygr_",
+									"name": "Fragmentation",
+									"reference": "B104",
+									"levels": 1,
+									"cost": 15,
+									"disabled": true
+								},
+								{
+									"id": "mLVho9zmo0SpivUkx",
+									"name": "Fragmentation",
+									"reference": "B104",
+									"notes": "Hot",
+									"levels": 1,
+									"cost": 15,
+									"disabled": true
+								},
+								{
+									"id": "m7TE-6PbYqIhc3bl9",
+									"name": "Radiation",
+									"reference": "B104",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "ma6JmC2h2YHm_5SB7",
+									"name": "Surge",
+									"reference": "B104",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mGWBHajN5hf27EVjT",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "2",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mnjBdFPtGBiEcf7lP",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "3",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mOBw7lNMmNzKaja3b",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "5",
+									"cost": 150,
+									"disabled": true
+								},
+								{
+									"id": "mU40ds9IHxRqKlPp7",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "10",
+									"cost": 200,
+									"disabled": true
+								},
+								{
+									"id": "mUwODFdYUcQTR6Wbv",
+									"name": "Side Effect",
+									"reference": "B109",
+									"notes": "@Effect@",
+									"disabled": true
+								},
+								{
+									"id": "m9XpAQir9jg93MiKc",
+									"name": "Symptoms",
+									"reference": "B109",
+									"notes": "@Effect@",
+									"disabled": true
+								},
+								{
+									"id": "mIikUiOhu_3dNDqOP",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.5",
+									"cost": -30,
+									"disabled": true
+								},
+								{
+									"id": "mH51FxF_OIi1CY5fB",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.2",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "m2boKhBqRzXp5iuoR",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.1",
+									"cost": -70,
+									"disabled": true
+								},
+								{
+									"id": "mmxqSbMoCjdzmpkdQ",
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "moVV9W_2KmkCcc_pZ",
+									"name": "Surge, Arcing",
+									"reference": "PSI20",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "megA-3CjMTfJBnv8C",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "m2IwCpU9KwYmjiSSA"
+									},
+									"name": "Accessibility",
+									"reference": "B110,P99",
+									"notes": "Only when using Altered Time Rate",
+									"cost": -10
+								},
+								{
+									"id": "mIC7QIunxY7vxln2M",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+										"id": "mszPouI4XpFXHn0RW"
+									},
+									"name": "Aura",
+									"reference": "B102,P100",
+									"cost": 80
+								},
+								{
+									"id": "mmcda9QQp6rpUCcSm",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "mVtDQj3J1f5GAAQ-J"
+									},
+									"name": "Melee Attack",
+									"reference": "B112,P103",
+									"notes": "Reach C",
+									"cost": -30
+								},
+								{
+									"id": "mLPUGZCVUB_Gn_nxy",
+									"name": "Requires Grapple",
+									"cost": -10
+								},
+								{
+									"id": "mmlVvFfHmjsF4WlXl",
+									"name": "No Incendiary Effect",
+									"cost": -10
+								},
+								{
+									"id": "m6ZZ5t7drzXTY_oBD",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"points_per_level": 5,
+							"weapons": [
+								{
+									"id": "WlN1V8m8sdbFs8BSR",
+									"damage": {
+										"type": "burn",
+										"base": "1d-2"
+									},
+									"accuracy": "3",
+									"range": "10/100",
+									"rate_of_fire": "1",
+									"recoil": "1",
+									"defaults": [
+										{
+											"type": "skill",
+											"name": "Innate Attack",
+											"specialization": "@Attack Type@"
+										},
+										{
+											"type": "skill",
+											"name": "Innate Attack",
+											"modifier": -2
+										},
+										{
+											"type": "dx",
+											"modifier": -4
+										}
+									],
+									"calc": {
+										"damage": "1d-2 burn"
+									}
+								}
+							],
+							"can_level": true,
+							"levels": 0.4,
+							"calc": {
+								"points": 3
+							}
+						}
+					],
+					"calc": {
+						"points": 83
+					}
+				},
+				{
+					"id": "TSQaa69CV0JBA559h",
+					"name": "Abomination Shapeshift",
+					"children": [
+						{
+							"id": "t8HKEWJdei6NIXGPv",
+							"name": "Alternate Form",
+							"reference": "B83",
+							"notes": "Requires only 2 seconds of concentration with enhancements",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mm4xznF_oyRbc34F0",
+									"name": "Cosmetic",
+									"reference": "B84",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mVOqBg4qt8gfLUUr6",
+									"name": "Absorptive Change",
+									"reference": "P75",
+									"notes": "@Level of Absorptive Change. 1 None, 2, Light, 3, Medium, 4, Heavy, 5, Extra Heavy@",
+									"levels": 1,
+									"cost": 5,
+									"disabled": true
+								},
+								{
+									"id": "m0v-6bLOlCg_6rDIu",
+									"name": "Active Change",
+									"reference": "P75",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mcagSFI1AuG20xW53",
+									"name": "Non-Reciprocal Damage",
+									"reference": "P75",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mI_A3kUyz__JBNjvz",
+									"name": "Once On, Stays On",
+									"reference": "P75",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mnnzuEMFnLzh7aY2l",
+									"name": "Reciprocal Rest",
+									"reference": "P75",
+									"cost": 30,
+									"disabled": true
+								},
+								{
+									"id": "m3e9yMCT-X2et9ueV",
+									"name": "Projected Form",
+									"reference": "P75",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mBY2qZeORvoKT_SLe",
+									"name": "Takes Extra Time",
+									"reference": "B115",
+									"levels": 1,
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mLaYp-v5ySyQ74kqo",
+									"name": "Reduced Time",
+									"reference": "B108",
+									"levels": 3,
+									"cost": 20
+								},
+								{
+									"id": "mMEKDB6xGZ2Ip311_",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"levels": 4,
+									"cost": -5
+								},
+								{
+									"id": "mKxkBzeCfEdpgc0pH",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 20
+							}
+						},
+						{
+							"id": "tcGAiWuYEWAlXUhG8",
+							"name": "Racial Template Pool",
+							"notes": "Level is difference between old and new racial template points. Must be positive or zero",
+							"points_per_level": 0.9,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 1
+							}
+						}
+					],
+					"calc": {
+						"points": 21
+					}
+				},
+				{
+					"id": "TznH3jDAkw9fbC9CO",
+					"name": "Maleficent Transfiguration",
+					"children": [
+						{
+							"id": "T0eE0qoPKSIUVB8ES",
+							"name": "Level 1",
+							"children": [
+								{
+									"id": "teNnsT-9zfrgXEyoG",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "Mv4ttFga57tI5tLFl",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "m6e4Rem0N0sy2ALp8",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mhNQ60psEt-lesgGs",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mhMJWuetIJx-vY3dE",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mjBtz3vynqMWUAQTj",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mrjUvMWDKJySqCaUN",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mssyYWsJJ0M2pgT-X",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MqxEf-T01Zss1tlVO",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mO8uwqNNC3mqlc63t",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mUbKUaqMWM586Mr8D",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "m_H9v0XuPwfFh1gbZ",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mRT88h_ZM1Yzoay9X",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "ml46GfLE4wEKamIfF",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mW-Gut93lm57No0oF",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mVYrIXVndQ2SKdzIx",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mauQpbqFTQavf_FMM",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mYrY9G_LjPLKaXJbL",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mhi-9kRwEgOMrRsxP",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MJSShp9R9oTBg34hi",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mLC-NP8X2Ab5NwDvz",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mpE2uK_0P5KntF69v",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mfI-A80kSVKh7eeTq",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mChD9XvYauccF5rsT",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mg04r0aZgFsfkQm6n",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mQQXMazreWF_Diz0n",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mLEGxXQdIdNOkZYzp",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mp7HYEEYIMjmxg1vF",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MzEq5Ujxqt2PGEmmV",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "m0hDWwnI7VrgO7Uri",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mJFoofTDSl7cAxjzS",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mrN1pXXehHt7r7G6x",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MEZx6nC1UdI0z3jAy",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "mttd2x-K_SIyhsXjy",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "m9gj3fpiZmzXblLvk",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "mJstwJTbxhZ_T_yq-",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mZQQv4LQDIyfgruOz",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mqN4iT8Ms_CoxXL_k",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mEEAiBTEKxzNrLGhP",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mjLy439QAKZGl2lWn",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mdBZUztNWLxsciOTR",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mK0DHttV5fqOaGezk",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 1,
+									"calc": {
+										"points": 46
+									}
+								}
+							],
+							"calc": {
+								"points": 46
+							}
+						},
+						{
+							"id": "TgkPOIZQRonHPbxV5",
+							"name": "Level 2",
+							"children": [
+								{
+									"id": "tO0F3GEp20o1Bod3j",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MUsUhCsv44xrBCBsR",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mrw9W7Tz6uHIFivPy",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mDRDE2BjKrtcJ8kP1",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mRf5I_kkpPwhEcQo3",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mVsG2Q1RsXrsDLFYQ",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mNPSmL7PKvypAxjH1",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mqpugS6MSkaWCwLVb",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "M9ycmyt8rpABZihYE",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mCEaN9BsJZbKP2BQj",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mTFebM9mm4eXO5Eu9",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "muicRAh_73p9nT5RI",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "m1M8X7OWYCzxgOxP0",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mJWEgObK4ejGPOk9c",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mLZd7EgGrgsUw83LV",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mWUiGPf0iUlD5S6su",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mnwWgnsu2bom_sSBK",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mzKE9I4OeC8CCPUZH",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mV4i1gyVyrJh8L4Ww",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "Msam28yWpx4ME3TJ2",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "me0K9pL7wzTcMSORA",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mq-4qmJxgcVhJwk8s",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mpwj786El0-coNkSo",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mz_octODLByvxBzDG",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mmzNN4z2UjpfJfU7U",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mAszg6ImVdg-Oc_Ek",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "m-V6bEkHIwjU7Nxuq",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mQ7bJZ5HuOLHI_NgU",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MTu5bYXdYbkLNdvVi",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mCLr156Ei48OEmqM6",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mOJdQAjhu-UlRyKpg",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mIDg3IdAH52ClZDQE",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MbPf3xmvZJbBh2xMI",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "mWdu45-6LiuRbvENS",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mlkAG-RAgUd5WU7ga",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "mwI2dYcCTexms8QVK",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mtUtqG2Ey9cegLV2b",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mvG9hOAST2iwNpKAW",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mrB02jNxqhnL3Blcd",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mACZxfsArKZdb5ZV1",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mAuA0yeX4pYMkqc4U",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "muKGUdmpVgyZS2fuR",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 2,
+									"calc": {
+										"points": 92
+									}
+								}
+							],
+							"calc": {
+								"points": 92
+							}
+						},
+						{
+							"id": "TkDUUOpJBrwAKMR0e",
+							"name": "Level 3",
+							"children": [
+								{
+									"id": "tJIKTlnosKeSGuFab",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MBjRUVCJWUGrrGgIr",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "muMLf_DWR5yvOyiKb",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "msvSrrADLcVvy94-R",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mVLBOaKAiIIp1nbz_",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mYQfwl6CxMVBhdkMX",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "ml57Kcim3W5iwkW9P",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mzBFD_Fb3bLomR4ky",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MZ-O5OxeoF9qR_xvP",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mGekC3JbP6RSwYmHL",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "md8f8LJsJXzINJYBI",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mF3S_1hCpgBu7SyqD",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "moQhvbeZczcUpsLAw",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "me9A2qZnkidlsZGVA",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mNjj8mHuF-cKNktL7",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mBN2X3NONOBmFScn4",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mU9WE22m3GvOSWKI-",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mhOtlWBoIoQynI3KU",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mT5NkXsFwY8hYfvcn",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "Mk4M5JlT13_789ymB",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mtpDEYTEk-_QyOgVq",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m_xTEZf8abTX4RYri",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mdu67HGFe1FfNeOtk",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mm0POJkpbOXPii_zU",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mMfTR2iDDuTUNGAVq",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "ma3VDss4fneuy2T1Q",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "m96oaQro6qu7sC3UZ",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "m1OlVyItdbMooEdYu",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "M7oxqviUEd0L6Q-u0",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mUExcp6t6212J_ZpE",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mnlAaCQ3WM9d-H3fb",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mxuxOEWhcHQnaMad6",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MKKXegGjTvbUc9E6c",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "m_nDvrYZ9cdba3ewN",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mHwgXV8eci_khnR9E",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "mmKwiDBsEQ57xwchG",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mTS7u280stz6cCcLc",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "myQVEp05EJHzPsnLy",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mmLr9fPUWyRZu8QSd",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mHFrL0D-hMjcvc1hR",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mSJ3EuOFWTOGOoiHc",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mcH5RPy-MMxRQdYnT",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 3,
+									"calc": {
+										"points": 138
+									}
+								},
+								{
+									"id": "tSpm6p9pRki7TM1Oq",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"notes": "Bought as Alternative",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MXIkBLdmbDDB5Ccvr",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mpVnxGYklwj_MW24x",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mHAvyGrTwaicgqEQB",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mRF94QB1xRZzZuT3z",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mFU4Agp1wjxaGKw7H",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "motFUv04tRv-EXXR-",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "m0y_Bh6GetbyuMVX1",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MgqAVbIn4_8lppE3O",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mT4BBEm_Wio1BGxo8",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mObAUz8kedQUp6A0g",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mQ2-TbJ9hII3OOGMh",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mBA_Ep0GvAs4E7OAd",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mfuptFaMTbnUsKtyL",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mphRxiEnkvytnhgJF",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mJ24JHVERLnywF2rW",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mV0ZZcSYtKy55DO_r",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mBNgW0dXHryurE0Wm",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "m-s22SLJYjD9htngk",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "Mt2KyDP7KtL3KHi5q",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mjEjUuvhVzIiMfusy",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mJ38gwtp2v6T6F_LO",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m1gMZmNMph4XZi6uw",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mHixRKgIv_oLWWw8P",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mg9RSKqCsTecmJWDg",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mmHGowiucU7lgXrcO",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mbrwpEx0mkrnNOkBU",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mYuBnq1iTodOhD3aN",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "Mm5hANRbCgkVDX3L8",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mwuXxpU1tGVlduzZ1",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mlP7Mkj1GYBPmqFS7",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mXjPZr53VrVCJ0hXH",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MGtcYlCLpH2zJ1KPV",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "m1ioW5PUNR6xRnVkr",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10
+												},
+												{
+													"id": "m9YcJHyuuTrQnpWn8",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mZHWszdo1l-6XBE79",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "moFdPRGYHkQykQsDD",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mXwV9_YfiY_NXT_CO",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "m1s4C3kNezQDF0JV2",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mB7GlxwK_OybhsznA",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "m-4YAjd52rpAoo37E",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 2.5,
+									"can_level": true,
+									"levels": 1,
+									"calc": {
+										"points": 33
+									}
+								}
+							],
+							"calc": {
+								"points": 171
+							}
+						},
+						{
+							"id": "TUfnzGTI_kwGFQzAX",
+							"name": "Level 4",
+							"children": [
+								{
+									"id": "txRRAyh9VrixhD8XQ",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "Me5fSbKtodn5ujQR9",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mTas-J8lf1sltP0E5",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "m4K8H5Llm6DChJZm4",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mI7i3NV5r5AhVMSd3",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "m3kq-oFfm-2aA6e6F",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "myGnfeGeov4VN-HCV",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "m7_bGwKQdtKXYalH_",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MO0FMw1YzMJLiMX1v",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mC81o4rtB_Ci0UEGp",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mAphiHB6tJWqrrnMz",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mPDfxlSH6vgkjMohP",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "muhEUI6nsXzGt6LtE",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mViRddzwjLW0eJI3O",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mjBlNzZC70MdHlYZ3",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "m7vWvqlkoZfaf2h5Z",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mOjKbQUibLJAS5-hB",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "m5ssdsbLTYMKoO8DG",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "m48EpYyvCiumeNXXq",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "M07O2cCMJVe5lHKgg",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "met-n0vY1rYGwEqmL",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mdY61zGVHREnYz1e3",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m7UEA9t9lD4RWS0JO",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "muCbKGPBHBMF6Pw52",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m9rzNg3ZTVnv3iJsz",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mnTTaAj1S70Z_xFoJ",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mfYD_fKL6mOsw2kDG",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mcgFXSZnHohKNNN1b",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MYRtT0245BUUHA0m6",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mZk62YjErdldS45dI",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mI1S-ko4m4vJnujum",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mdmva8hG-ZH_ej5gU",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MFsOPmYdFfk0R36My",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "mvmGET3_3HfdDaKd3",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mJrirOVqTVZWUX5CO",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "m3FdO-QDV-FmpDs9f",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mffYgTjotNCH-sWAF",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m7BkixYW5sIGPdg7r",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mbeY-wss_gGHDCTGD",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mnpOdFK0vXkwIugSS",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "m0JuIrv1IZ-F03FJZ",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mjUl0kdV1Mdxgvq2i",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 4,
+									"calc": {
+										"points": 184
+									}
+								},
+								{
+									"id": "tXuYr-fE9lDMt2rak",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"notes": "Bought as Alternative",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MztpeWNakPikw66pA",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "m6EhVxIuWx-9igEyO",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mtxS3rGGbjodxK-je",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mUa1zKdjHDbkbPx2f",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mh8CuMgcErGqxM5Vp",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mlgfIi_cx-9NxBeCk",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "m6V1SLhhCGJlaApl4",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MB3YAgiapI_aQoP9d",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "md8oKVxsSMDRi95LB",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mZscegcuDcIYymkCc",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mXd1oIoGQM1ax6fjA",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mK9FyY-nLr46Ss7F8",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mOEgjK_dw6GwTTxQk",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "m1Q0p322OWrn4-e2J",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mRQ-Ab1p3v06Tuytk",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mrq97bHziDY4rsII8",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "m27Pq28sBpnQM-V0D",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "maf2uOGdCJIxk7zTm",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MCmcM5yuQnz_cNfYA",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "m_CYHYKBaq5EUfC4u",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mmnYW31bUSuJVxSav",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mHsHfswDMVCwrP2M3",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mse8pirq9pLCeYZIh",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mi5GvFEmq9O8lbl6d",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "muZ4f-U-OvKdU-RWH",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mL6NgmcDrmHskgU04",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mfSTOSQwhslMk8eVT",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MdcACe3dpfP4jDSqi",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mdX9zpzGVQC68tDmv",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mSl9yFJhimd7uAhls",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mlboPfxgUwM6HhgaH",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MgfrHY_TIQxcGByM-",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "mLstzZOrQfMkMAYRH",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10
+												},
+												{
+													"id": "m_jduij-ppdCMC3pd",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mHQOQnDxv-fBr9Vez",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mrF8gtt67RE9sUd2Z",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "m8zifquPjVCr4tL3A",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "m7HhUdifTplNtik4q",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mOCuM9XJWAgUO5eE8",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mZB0EfAOc1IB3uw7Z",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 2.5,
+									"can_level": true,
+									"levels": 1,
+									"calc": {
+										"points": 33
+									}
+								}
+							],
+							"calc": {
+								"points": 217
+							}
+						},
+						{
+							"id": "TlawuhAEGgojAINfn",
+							"name": "Level 5",
+							"children": [
+								{
+									"id": "t-_nWSacfwG4qZB-r",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MtePYGs8z0LCTmMyY",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mo0t30uSHd4OQnp6M",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mWyrTRrSpI_ClwhDQ",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mwXDraVb8Vk9eiqGF",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mgWcHr6VAU81aJjNM",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mmsAIskGLyN5nS1u0",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "m1LqfQypH51eMezRC",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MyPbXmUDogDYT_GCh",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mIaW7lw2ZyJIT03ll",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mwq9Mb6WEWfgWWBml",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mucig3VngskvmcSOd",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mAFvu-uPbLu4InrPg",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mtpHNzpg_RdwNwH-B",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mwHdjSmN5kC4NHDTS",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "moJa0BDUg-CR5OR-T",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mEW_e5E2k0x_Z_ACS",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mC2PqZLAOvuR2sTgU",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "m2KKF-KeHtBNK8K8W",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MtylwgSbAHlPNiGKE",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mURWPDggbX2Nx3fET",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "maswgq0pjkP-Z4Evp",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mqaS0mve13L9_n2Ik",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mg41kJnkDXooZ1225",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mMPu-2-Oni_ztbwJV",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "maoXlwmLdrto01XJy",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mxTzp3GXD5cn-qpaa",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "mRBqHWa7FjNypNtdt",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "M5IlkFTyjqnFNM17M",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "m4_WB7DQZQitQ-md6",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mhuKIfKmbxDgT0vqf",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m89XNkZCEOYTTmGy8",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "M-DNW_Uxjnpd1nNYq",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "mtPciBxm2aLunEJdo",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mLvUe-cbVftldkLnQ",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "msJekzFAAku3z2KlW",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "m81HZYAqsmcMUVahR",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "muIkwR7fCFEftHrl-",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mknGR7fx_ny6FuNeu",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mHmMbXjgi7fc3qp04",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mijVgG7GATbGdiZJY",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mwtiwDxZaCr0PlKDM",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 5,
+									"calc": {
+										"points": 230
+									}
+								},
+								{
+									"id": "tjsJCmoUgHxDSUNKP",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"notes": "Bought as Alternative",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MzOsSQftP5qmKnJFA",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mTwwmzd59uKSs2Zbr",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "m__6HIelCieuKT95A",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "myr6ZqDOdJUOmgYHC",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mnRoo9ThPJd4l6HIv",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mTn__VAHZgoYRogJR",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "m5oFLImQkpKFUJ3At",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MLJ7w8mnI7hpY7YNg",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mEZSeL8x9O7Yq9cRn",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mj7fIOk5Nsq0OWYAh",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mFF7ZmdaJ2XyHeOAl",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mYm7_hMdd6FgMVj4k",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mi-Hffgi7jsH2KV53",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mFwiY17nPPegyhc_S",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mtUTLlBZtkLHPAofx",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "m9ayOYkkNKjlhc_Js",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mnbSJr0FHlXdO9FoH",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mlrVhXeNH3HUVBAfj",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MhTjkd2_0TgUTLCDp",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mwh1JghvsuOdiZXO9",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m1OlyZVUBs1VI1wxK",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mrgUpm-TzFgt0zF9-",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "m4KZQ-W9wnVzvdDJb",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "my1unoLhaAPbA8Npf",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "md_nl7wNGj3VoiiEl",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "m1fKz4vuCY5s3z6O6",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "m4MsKN5_ArzV26Rx-",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MKYOpc9uZXiY6x0SX",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "m2F2M3bCHFPehZSj5",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mqwrADD4zoumywoww",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m1kfATLH2sOBrqe8U",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MJl3CqqqzDTkuXR6Z",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "m6r9YT9ue5C0EoQ-J",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10
+												},
+												{
+													"id": "mZhJcJHJnrVikIK3p",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mUpBJTtPQ15bC_4NK",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mITAXhNh-Q13yx0BK",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "m79WTpvT4TZQ07P8R",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mO7iJE4snvyLYal9g",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "m-0vSvDFMA-QamOoy",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mroJcWms-bSjPN55_",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 2.5,
+									"can_level": true,
+									"levels": 1,
+									"calc": {
+										"points": 33
+									}
+								}
+							],
+							"calc": {
+								"points": 263
+							}
+						},
+						{
+							"id": "TNBK6m0-WDuu12E7f",
+							"name": "Level 6",
+							"children": [
+								{
+									"id": "taZvcLgtjDVXdGuqy",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"notes": "Bought as Alternative",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MnEUfVrEBkc06QPJN",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mFlN_T_KgWyQZBTZv",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mW9-B_X51KFXJaX5P",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "muIq6BHCMFl2F5kBa",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mrHDYO1F-1FHTP8vW",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mIqXWvBNG0NMJbBx8",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mtp9tAnbbeMSX3pLR",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MsBdz9f-N7lo-AXWB",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mW1o1K_XsZY07BZeZ",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mbk26ukJCAFk_xmCW",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mvFMeaoqfX6WqS_Bq",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mFfhQIJ1LDK9HQLiX",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mhljrsgsHTnBcowio",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mw1tZsV-fhuJc7O0w",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "m8B-23MnSAfVwvFyg",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mQaBuxoTSf-b7ZFxf",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mGJH6qd7ApYWa6ZJc",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mmP0bqxahUAd2RbSi",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MC6Cuc3ZpAhODBc-T",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mJCPaui2Gktp0IgpC",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mUPFl9j2QNlYTuMLY",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mZBe9OsvSByKeK0RL",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mSGp5nwREOgMTuJVQ",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mZEhy3B8CBwGGHYRC",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mA3bzLXCVT7JVak_F",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mCf_yw6udEQEVQvoC",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "m9SsHL1k3TqLgJ5bv",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MehboHMUeLq_dXxIP",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "m1WR23Gc_Fc-9s8pu",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "mN8XL_70AZJfDGUc-",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m3VhEc4c8ZO0dTVJ8",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "M2vd2p4viIb0l1v3h",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "m675t_beTHX2da0fk",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mp0ySg56Rl0S9KkzF",
+													"name": "Gives Alternative Form (Mutant Blob)",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 15,
+													"cost": 10
+												},
+												{
+													"id": "mkou41MCoLvo5OWUI",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mcGWjjOZg20WJRL7o",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m2sh5jrhUsTbtbq36",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "m4Th84RZ7nYgsJ8Xl",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "mB6TUpi_UIJj96q0H",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "mfLLGlUTTMPEn4z5q",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "mFo46-nm8CpGgoqLs",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 2.5,
+									"can_level": true,
+									"levels": 5,
+									"calc": {
+										"points": 58
+									}
+								},
+								{
+									"id": "tEIA83SPH2mA1KMH4",
+									"name": "Affliction",
+									"reference": "B35,P39,PSI13",
+									"notes": "Bought as Alternative",
+									"tags": [
+										"Advantage",
+										"Exotic",
+										"Physical"
+									],
+									"modifiers": [
+										{
+											"id": "MX2ZBGTef9EeJZc68",
+											"name": "Attribute Penalties",
+											"children": [
+												{
+													"id": "mNvjCsL9-V5DmelKP",
+													"name": "DX Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to DX per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "m_uUF_mR-ka4akg72",
+													"name": "HT Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to HT per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												},
+												{
+													"id": "mR_8WRl_qzVbYy3mT",
+													"name": "IQ Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to IQ per level",
+													"levels": 1,
+													"cost": 10,
+													"disabled": true
+												},
+												{
+													"id": "mbipAWKHnD1DBn4MS",
+													"name": "ST Penalty",
+													"reference": "B36",
+													"notes": "Gives -1 to ST per level",
+													"levels": 1,
+													"cost": 5,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "m3IeRNHL2TiTAVCY3",
+											"name": "Cancellation",
+											"reference": "PSI13",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mLgCJlee3JIaAuSYS",
+											"name": "Cumulative",
+											"reference": "B36",
+											"cost": 400,
+											"disabled": true
+										},
+										{
+											"id": "MX0r7jzSpCXbkKWL4",
+											"name": "Incapacitation",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "mDVH46qiA2HALAy2R",
+													"name": "Agony",
+													"reference": "B428",
+													"notes": "Lose 1 FP per minute",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "m8WCrCbrzLwSAkAFX",
+													"name": "Choking",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mhuau4ucFmspJGVGA",
+													"name": "Daze",
+													"reference": "B428",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mcbP5zDHDIaSNT76z",
+													"name": "Ecstasy",
+													"reference": "B428",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "m2JQfbpr7QcSPfl1v",
+													"name": "Hallucination",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "mkhBd-LqKJMB7-hui",
+													"name": "Paralysis",
+													"reference": "B429",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mL-xTVeC70yuUpOwe",
+													"name": "Retching",
+													"reference": "B429",
+													"cost": 50,
+													"disabled": true
+												},
+												{
+													"id": "moRFmmxKxkh9mf1y6",
+													"name": "Seizure",
+													"reference": "B429",
+													"notes": "Lose 1d FP at the end of the seizure",
+													"cost": 100,
+													"disabled": true
+												},
+												{
+													"id": "mq9hBqfCypWYk8YZB",
+													"name": "Sleep",
+													"cost": 150,
+													"disabled": true
+												},
+												{
+													"id": "mw17DGFoYQalwC1lr",
+													"name": "Unconsciousness",
+													"reference": "B429",
+													"cost": 200,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MhYi_etF9asbXfQnk",
+											"name": "Irritations",
+											"reference": "B36",
+											"children": [
+												{
+													"id": "m2Ro3wLxc5Udgv0VA",
+													"name": "Coughing",
+													"reference": "B428",
+													"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "mK-jx-z-jDxWS5B68",
+													"name": "Drunk",
+													"reference": "B428",
+													"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "m40ywMQ_8S0hl3Plu",
+													"name": "Euphoria",
+													"reference": "B428",
+													"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "mqlP8k9QWI1WogTek",
+													"name": "Moderate Pain",
+													"reference": "B428",
+													"notes": "-2 to all DX, IQ, skill and self-control rolls",
+													"cost": 20,
+													"disabled": true
+												},
+												{
+													"id": "moHcirX1Leb-gLqjj",
+													"name": "Nauseated",
+													"reference": "B428",
+													"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+													"cost": 30,
+													"disabled": true
+												},
+												{
+													"id": "m_9_K4K9jqkhwlUyj",
+													"name": "Severe Pain",
+													"reference": "B428",
+													"notes": "-4 to all DX, IQ, skill and self-control rolls",
+													"cost": 40,
+													"disabled": true
+												},
+												{
+													"id": "mrJ0hiMYosVG78G7v",
+													"name": "Terrible Pain",
+													"reference": "B428",
+													"notes": "-6 to all DX, IQ, skill and self-control rolls",
+													"cost": 60,
+													"disabled": true
+												},
+												{
+													"id": "m7jBWpenbnqZHOxE8",
+													"name": "Tipsy",
+													"reference": "B428",
+													"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+													"cost": 10,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "MyDjxpqlIs0_OBiRS",
+											"name": "Mortal Conditions",
+											"children": [
+												{
+													"id": "mmRQnYNcNsPciUsJ2",
+													"name": "Coma",
+													"reference": "B429",
+													"cost": 250,
+													"disabled": true
+												},
+												{
+													"id": "masg3MlhHLKYtcNQl",
+													"name": "Heart Attack",
+													"reference": "B429",
+													"cost": 300,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mBDOqVLYlwUDB2jTb",
+											"name": "Stunning",
+											"reference": "B36",
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "MSDvkbU6vSxL7NkuV",
+											"name": "Traits",
+											"children": [
+												{
+													"id": "m9Qeai6f5YU5KaB0J",
+													"name": "Gives Morph",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 100,
+													"cost": 10
+												},
+												{
+													"id": "mj5YNwXuXtd9gZP5v",
+													"name": "Gives @Disadvantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												},
+												{
+													"id": "mnlkAuJ8nfnnqYC1y",
+													"name": "Negates @Advantage@",
+													"reference": "B36",
+													"notes": "1 point per level",
+													"levels": 1,
+													"cost": 1,
+													"disabled": true
+												}
+											]
+										},
+										{
+											"id": "mRJbj69H2orhxYD-9",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "m96FyUzUxgC8ysy7i"
+											},
+											"name": "Contact Agent",
+											"reference": "B111,P101",
+											"cost": -30
+										},
+										{
+											"id": "mjZA-hk8RJ84BhlI4",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mVtDQj3J1f5GAAQ-J"
+											},
+											"name": "Melee Attack",
+											"reference": "B112,P103",
+											"notes": "Reach C",
+											"cost": -30
+										},
+										{
+											"id": "m4WsyAKVON99z7fVJ",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+												"id": "mFyrfmQT6yefaKkKV"
+											},
+											"name": "Permanent Duration",
+											"reference": "B105",
+											"cost": 300
+										},
+										{
+											"id": "m4RusYk0O7tklPwiW",
+											"source": {
+												"library": "richardwilkes/gcs_master_library",
+												"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+												"id": "mb8dKIbPtFmqDLYaM"
+											},
+											"name": "Costs Fatigue",
+											"reference": "B111,P101",
+											"levels": 4,
+											"cost": -5
+										},
+										{
+											"id": "myVl5q4zd2xYBzktg",
+											"source": {
+												"library": "vitoguro/nano-crysis",
+												"path": "Power Sources.adm",
+												"id": "mDoGdBB3r9f8gEwDd"
+											},
+											"name": "Nanotech",
+											"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+											"cost": -10
+										}
+									],
+									"points_per_level": 10,
+									"can_level": true,
+									"levels": 2,
+									"calc": {
+										"points": 262
+									}
+								}
+							],
+							"calc": {
+								"points": 320
+							}
+						}
+					],
+					"calc": {
+						"points": 1109
+					}
+				},
+				{
+					"id": "TIhq7bEafOg-gMOLE",
+					"name": "Nano-Heal",
+					"children": [
+						{
+							"id": "tNi9QRCU6YsBddIr9",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "to1xtqqmTMVRyo0q3"
+							},
+							"name": "Healing",
+							"reference": "B59,P51,PSI14",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Mental"
+							],
+							"modifiers": [
+								{
+									"id": "m9I3wrD8XgSzQicsa",
+									"name": "Faith Healing",
+									"reference": "B59",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "m6x8xpAY1uxe5hNXp",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Mammals",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mAUEMZ1WdJelJLe7k",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Earthly Life",
+									"cost": 40,
+									"disabled": true
+								},
+								{
+									"id": "mqnp064sd1O9Pggcq",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "All Carbon-Based Life",
+									"cost": 60,
+									"disabled": true
+								},
+								{
+									"id": "mCW0r-tjCj70ArxGi",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "Anything Alive",
+									"cost": 80
+								},
+								{
+									"id": "m4Pz6OEXrRkS4w5HZ",
+									"name": "Xenohealing",
+									"reference": "B59",
+									"notes": "Anything Animate",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mqV9j2qNxuRRxQaqW",
+									"name": "Disease Only",
+									"reference": "B59",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mdJbDKlDiPE9CCN6h",
+									"name": "Injuries Only",
+									"reference": "B59",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mySxQEafVoiTIN4ZK",
+									"name": "Own Race Only",
+									"reference": "B59",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "m9SHZMHitr2U4QMqA",
+									"name": "Psychic Healing",
+									"reference": "B59",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mHejB5H8RHPlop6kr",
+									"name": "Affects Self",
+									"reference": "P51",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mZcpkz0Qb_KK92MGK",
+									"name": "Cure Affliction",
+									"reference": "P51",
+									"cost": 60
+								},
+								{
+									"id": "mBQYVwf6ribtYeivV",
+									"name": "Affliction Only",
+									"reference": "P51",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mxAG2y1q366_fzs91",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "2 FP",
+									"cost": -25,
+									"disabled": true
+								},
+								{
+									"id": "mUXvwVyKLXvrb2esE",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "4 FP",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mR5zm3L9Z6EqAVD-H",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "6 FP",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mv4NOPTya4h2zG-r3",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "8 FP",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "meWByZT_HSuwZEwVl",
+									"name": "Capped",
+									"reference": "P51",
+									"notes": "10 FP",
+									"cost": -5
+								},
+								{
+									"id": "mtmPWsb611oK9sCkh",
+									"name": "Reliable",
+									"levels": 5,
+									"cost": 5
+								},
+								{
+									"id": "mnx7cJh5MdmmK22na",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Enhancement Modifiers.adm",
+										"id": "mN8uzsyp52XUdqRIb"
+									},
+									"name": "Reduced Fatigue Cost",
+									"reference": "B108,P105",
+									"levels": 10,
+									"cost": 20
+								},
+								{
+									"id": "mb9UxkFRp9lsrkIr8",
+									"name": "Empathic",
+									"reference": "P51",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mr5zp-VOxuRBcOTA5",
+									"name": "Restore Limbs",
+									"reference": "PSI14",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mcgVNsIXbaCJEVsXu",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"base_points": 30,
+							"calc": {
+								"points": 135
+							}
+						}
+					],
+					"calc": {
+						"points": 135
+					}
+				}
+			],
+			"calc": {
+				"points": 1358
+			}
+		},
+		{
+			"id": "Tw78L-4AFg_Hq3sJH",
+			"name": "Nanotech Domination",
+			"children": [
+				{
+					"id": "tj9ffdIjOd0t3LA4g",
+					"name": "Nanotech Domination Talent",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Power"
+					],
+					"points_per_level": 15,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 15
+					}
+				},
+				{
+					"id": "TR5fQeFiVYO1u8emK",
+					"name": "Machine Construction",
+					"tags": [
+						"Abilities",
+						"Nanotech Domination"
+					],
+					"children": [
+						{
+							"id": "tgBXeoESXGsADxPb5",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "t5jPPcX40hzIZNQlq"
+							},
+							"name": "Modular Abilities (Cosmic Power)",
+							"reference": "B71,P62",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mth_VNaGJtZ27a7sg",
+									"name": "Physical",
+									"reference": "B71",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "m0YDDE7_wYhw1qA_s",
+									"name": "Spells Only",
+									"reference": "B71",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mNFxB9IeOlUjxxj0Y",
+									"name": "Virtual",
+									"reference": "B71",
+									"notes": "@Realm@",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mztsChMNAwGa9jm_m",
+									"name": "Social Only",
+									"reference": "P63",
+									"disabled": true
+								},
+								{
+									"id": "mQI459tkxROQQwYUS",
+									"name": "Social",
+									"reference": "P63",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mjQWd5SzsjGqQFdIO",
+									"name": "Focus-Limited (@Very versatile focus@)",
+									"reference": "P63",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "mvS8d2oQjfL4CjSDz",
+									"name": "Focus-Limited (@Any ordinary variety of matter or energy@)",
+									"reference": "P63",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mgVABgoQPRLef3O45",
+									"name": "Focus-Limited (@Specialized focus@)",
+									"reference": "P63",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mpJ412xMUqfQ3sG47",
+									"name": "Trait-Limited (@Subset of traits@)",
+									"reference": "P64",
+									"notes": "Set cost manually",
+									"disabled": true
+								},
+								{
+									"id": "mZkxTH1CiZbJT1F2-",
+									"name": "Physical Only",
+									"reference": "B71",
+									"cost": 50
+								},
+								{
+									"id": "mPUNI3cBOkE-01IZK",
+									"name": "Costs Fatigue",
+									"reference": "B111,P101",
+									"notes": "1 FP per 4 points",
+									"cost": -20
+								},
+								{
+									"id": "mCIcV3ev2ZGHYX-6p",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Power Ups\\Power Ups 8 Limitations Limitation Modifiers.adm",
+										"id": "mZlDUysMUbS2swLt0"
+									},
+									"name": "All-Out",
+									"reference": "PU8:11",
+									"cost": -25
+								},
+								{
+									"id": "mg6dwwfiCaMaZdHcQ",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Power Ups\\Power Ups 8 Limitations Limitation Modifiers.adm",
+										"id": "mCD27yfxzVhAdITOD"
+									},
+									"name": "Requires (IQ) Roll",
+									"reference": "PU8:17",
+									"cost": -10
+								},
+								{
+									"id": "m2NpWMsPXd3RnIEt6",
+									"source": {
+										"library": "richardwilkes/gcs_master_library",
+										"path": "Basic Set\\Basic Set Limitation Modifiers.adm",
+										"id": "m1DilmWqMoaHpQb90"
+									},
+									"name": "Takes Extra Time",
+									"reference": "B115,P106",
+									"levels": 3,
+									"cost": -10
+								},
+								{
+									"id": "mBFRUCMUghaz9rXl8",
+									"name": "Limited",
+									"notes": "Advantages Only",
+									"cost": -10
+								},
+								{
+									"id": "mGSmEhDCjfIcs-GpJ",
+									"name": "Limited",
+									"notes": "super-science gadgets",
+									"cost": -5
+								},
+								{
+									"id": "mH5ZKhv6AJTBTsGgv",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"points_per_level": 10,
+							"can_level": true,
+							"levels": 30,
+							"calc": {
+								"points": 120
+							}
+						}
+					],
+					"calc": {
+						"points": 120
+					}
+				},
+				{
+					"id": "TKstoD8NcnEkEFoSN",
+					"name": "Nanite Armor",
+					"children": [
+						{
+							"id": "tafo8QdhNuIHnMstB",
+							"source": {
+								"library": "richardwilkes/gcs_master_library",
+								"path": "Basic Set\\Basic Set Traits.adq",
+								"id": "tXhp5q6e5CEtI0AOJ"
+							},
+							"name": "Sealed",
+							"reference": "B82",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mI8uuGYU2GMJs9HLn",
+									"source": {
+										"library": "vitoguro/nano-crysis",
+										"path": "Power Sources.adm",
+										"id": "mDoGdBB3r9f8gEwDd"
+									},
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"base_points": 15,
+							"calc": {
+								"points": 14
+							}
+						},
+						{
+							"id": "to0BqaftlENftIpzp",
+							"name": "Damage Resistance",
+							"reference": "B47,P45,MA43,PSI14",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "m8zoHKdS54IJhIj6X",
+									"name": "Force Field",
+									"reference": "B47",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mSKkNV5fFRTmcLTky",
+									"name": "Hardened",
+									"reference": "B47",
+									"levels": 1,
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mOKYPWPeCH4lgHvX_",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances @Trait@",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mQ44spmnD5i41P_cP",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Healing only",
+									"cost": 80,
+									"disabled": true
+								},
+								{
+									"id": "mRhx5ocY5kDt6Ya7V",
+									"name": "Absorption",
+									"reference": "B46",
+									"notes": "Enhances any trait",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mbGd1wmF0AzoZZeop",
+									"name": "Reflection",
+									"reference": "B47",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mrivltUQgRVP4hf5n",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Rare@",
+									"cost": -1,
+									"cost_type": "points",
+									"disabled": true
+								},
+								{
+									"id": "mr0dp4qH5Zn5L3S1l",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Occasional@",
+									"cost": -5,
+									"disabled": true
+								},
+								{
+									"id": "moT6HRzucA5tLSoxp",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Common@",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mHpnp7GQkr56uyrRh",
+									"name": "Bane",
+									"reference": "H14",
+									"notes": "@Very Common@",
+									"cost": -15,
+									"disabled": true
+								},
+								{
+									"id": "mRwMuU8KH7-awMt0b",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "Front",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mWsYz5eJqb_QVMV1B",
+									"name": "Flexible",
+									"reference": "B47",
+									"cost": -20
+								},
+								{
+									"id": "mLY4vFewJAfjcdExN",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Very Common Attack Form@",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mQ53ESvwO4-vwq0eV",
+									"name": "Semi-Ablative",
+									"reference": "B47",
+									"cost": -20,
+									"disabled": true
+								},
+								{
+									"id": "mB2qobyLUXgRrUp3Q",
+									"name": "Can't wear armor",
+									"reference": "B47",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mmEzS3SwppRJKJmMQ",
+									"name": "Directional",
+									"reference": "B47",
+									"notes": "@Direction: Back, Right, Left, Top or Underside@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mzNeka-H8MTo68NTM",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Common Attack Form@",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mOtlIZIJJsy75A291",
+									"name": "Tough Skin",
+									"notes": "Effects that just require skin contact or a scratch ignore this DR",
+									"cost": -40,
+									"disabled": true
+								},
+								{
+									"id": "mmCXR74VNVzBLAzy3",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Occasional Attack Form@",
+									"cost": -60,
+									"disabled": true
+								},
+								{
+									"id": "mCeOtXY8-7UNltZRV",
+									"name": "Ablative",
+									"reference": "B47",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "m0XyvoJVtslThEwAT",
+									"name": "Limited",
+									"reference": "B46",
+									"notes": "@Rare Attack Form@",
+									"cost": -80,
+									"disabled": true
+								},
+								{
+									"id": "m9I_V_oim9UTG80-2",
+									"name": "Laminate",
+									"reference": "RSWL18",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mr7Kp49jXc5UjjIIy",
+									"name": "Malediction-Proof",
+									"reference": "PSI14",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mepnJPgWrj1nqxE8i",
+									"name": "Maledictions Only",
+									"reference": "PSI14",
+									"disabled": true
+								},
+								{
+									"id": "mEjFmAgm_WCfwQxqf",
+									"name": "Partial (@Location, 1 level per -1 Per Hit Modifier, Torso is -10% thus level 1@)",
+									"reference": "B47",
+									"cost": -10,
+									"disabled": true
+								},
+								{
+									"id": "mHcdjP2sfu-omc6Tq",
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								}
+							],
+							"points_per_level": 5,
+							"features": [
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"skull"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"face"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"neck"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"torso"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"vitals"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"groin"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"arm"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"hand"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"leg"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"foot"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"tail"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"wing"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"fin"
+									],
+									"amount": 1,
+									"per_level": true
+								},
+								{
+									"type": "dr_bonus",
+									"locations": [
+										"brain"
+									],
+									"amount": 1,
+									"per_level": true
+								}
+							],
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 4
+							}
+						}
+					],
+					"calc": {
+						"points": 18
+					}
+				},
+				{
+					"id": "TSOydpabOOMn0CbnS",
+					"name": "Nano-Stun",
+					"children": [
+						{
+							"id": "tZ2D6Uh5KG7JNpZg8",
+							"name": "Affliction",
+							"reference": "B35,P39,PSI13",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "MR8HN8ojYFjp3u7Lq",
+									"name": "Attribute Penalties",
+									"children": [
+										{
+											"id": "miHUqP-P1riNmKUZV",
+											"name": "DX Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to DX per level",
+											"levels": 1,
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mcA23o-tPiRsbsM0K",
+											"name": "HT Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to HT per level",
+											"levels": 1,
+											"cost": 5,
+											"disabled": true
+										},
+										{
+											"id": "my84lEbabEf3uPnys",
+											"name": "IQ Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to IQ per level",
+											"levels": 1,
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "ml6HIuHuwbyT7LX8k",
+											"name": "ST Penalty",
+											"reference": "B36",
+											"notes": "Gives -1 to ST per level",
+											"levels": 1,
+											"cost": 5,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "m2sFwql9-O2gGS7FH",
+									"name": "Cancellation",
+									"reference": "PSI13",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mO-LEkvlCYPUmadBs",
+									"name": "Cumulative",
+									"reference": "B36",
+									"cost": 400,
+									"disabled": true
+								},
+								{
+									"id": "MaIM6dtLyswqDbKUO",
+									"name": "Incapacitation",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "mIGX20eoHIGXqSmX1",
+											"name": "Agony",
+											"reference": "B428",
+											"notes": "Lose 1 FP per minute",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mYf3Doy8vD9u-sq-Q",
+											"name": "Choking",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mkpOgIOhhzcVaIKYw",
+											"name": "Daze",
+											"reference": "B428",
+											"cost": 50
+										},
+										{
+											"id": "mU2rkpKr98Ec7aCDn",
+											"name": "Ecstasy",
+											"reference": "B428",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mvc0PQg-G0Sni2GRk",
+											"name": "Hallucination",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "m_r2d9BNT9WUE3PQ_",
+											"name": "Paralysis",
+											"reference": "B429",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "mXWA6nEjCVRCoXVjq",
+											"name": "Retching",
+											"reference": "B429",
+											"cost": 50,
+											"disabled": true
+										},
+										{
+											"id": "mkAufT-akFktKjY2E",
+											"name": "Seizure",
+											"reference": "B429",
+											"notes": "Lose 1d FP at the end of the seizure",
+											"cost": 100,
+											"disabled": true
+										},
+										{
+											"id": "mwJTD1MR4ZNZThL6u",
+											"name": "Sleep",
+											"cost": 150,
+											"disabled": true
+										},
+										{
+											"id": "m8eoDHpctfF4H8n14",
+											"name": "Unconsciousness",
+											"reference": "B429",
+											"cost": 200,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "M4Jj-bjQANT_r4XPg",
+									"name": "Irritations",
+									"reference": "B36",
+									"children": [
+										{
+											"id": "mDo321bangGtx6yBJ",
+											"name": "Coughing",
+											"reference": "B428",
+											"notes": "Gives -3 to DX and -1 to IQ and cannot use Stealth",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "mQhfui_jTGFawOU7h",
+											"name": "Drunk",
+											"reference": "B428",
+											"notes": "Gives -2 to DX and IQ; -4 to self-control rolls except those to resist Cowardice",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "m7trB_4XSU2B4ct_k",
+											"name": "Euphoria",
+											"reference": "B428",
+											"notes": "Gives -3 to all DX, IQ, skill and self-control rolls",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "mTF6-KUUFQPBXH3eK",
+											"name": "Moderate Pain",
+											"reference": "B428",
+											"notes": "-2 to all DX, IQ, skill and self-control rolls",
+											"cost": 20,
+											"disabled": true
+										},
+										{
+											"id": "m8ehanABhBWscAMXI",
+											"name": "Nauseated",
+											"reference": "B428",
+											"notes": "-2 to all attribute and skill rolls; -1 to active defenses",
+											"cost": 30,
+											"disabled": true
+										},
+										{
+											"id": "mZoiawdB7qqFA16Y2",
+											"name": "Severe Pain",
+											"reference": "B428",
+											"notes": "-4 to all DX, IQ, skill and self-control rolls",
+											"cost": 40,
+											"disabled": true
+										},
+										{
+											"id": "mVcbJ44T7-oC8uCWd",
+											"name": "Terrible Pain",
+											"reference": "B428",
+											"notes": "-6 to all DX, IQ, skill and self-control rolls",
+											"cost": 60,
+											"disabled": true
+										},
+										{
+											"id": "mCsoujScXFu6wp9Y3",
+											"name": "Tipsy",
+											"reference": "B428",
+											"notes": "-1 to DX and IQ, -2 to self-control rolls except those to resist Cowardice",
+											"cost": 10,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "M4nXtS-4z5o0ldmEE",
+									"name": "Mortal Conditions",
+									"children": [
+										{
+											"id": "mg7T3RgxcZ5LD5ZS-",
+											"name": "Coma",
+											"reference": "B429",
+											"cost": 250,
+											"disabled": true
+										},
+										{
+											"id": "meTcxmb5sQ_mJgyUS",
+											"name": "Heart Attack",
+											"reference": "B429",
+											"cost": 300,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "mFYX2jBlq67nZpd9i",
+									"name": "Stunning",
+									"reference": "B36",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "Me13wNqUbS0It7qO8",
+									"name": "Traits",
+									"children": [
+										{
+											"id": "mk9f7z20YoFnYYcd4",
+											"name": "Gives @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"levels": 1,
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "maiLrwvAYzdmGPRhp",
+											"name": "Gives @Disadvantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"levels": 1,
+											"cost": 10,
+											"disabled": true
+										},
+										{
+											"id": "mB1F5Sk9Daa5xWnh5",
+											"name": "Negates @Advantage@",
+											"reference": "B36",
+											"notes": "1 point per level",
+											"levels": 1,
+											"cost": 1,
+											"disabled": true
+										}
+									]
+								},
+								{
+									"id": "m60imo7vFBuXF2q6Y",
+									"name": "Selective Area",
+									"reference": "B108,P105",
+									"cost": 20
+								},
+								{
+									"id": "mGFSPxtBlNagg-Xyu",
+									"name": "Area Effect",
+									"reference": "B102,P100",
+									"notes": "2^level radius",
+									"levels": 1,
+									"cost": 50
+								},
+								{
+									"id": "mRyAZu5wReO7kH2WI",
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								},
+								{
+									"id": "mINKUhV2iE68w2EQ6",
+									"name": "Will-Based",
+									"cost": 20
+								}
+							],
+							"points_per_level": 10,
+							"can_level": true,
+							"levels": 1,
+							"calc": {
+								"points": 23
+							}
+						}
+					],
+					"calc": {
+						"points": 23
+					}
+				},
+				{
+					"id": "T_OPPu_mQbjuk96tU",
+					"name": "Swarm Touch",
+					"children": [
+						{
+							"id": "th2_nRZbOSPMkEPOQ",
+							"source": {
+								"library": "/Nano Crysis",
+								"path": "Poderes Nanite.adq",
+								"id": "t1J3i-JPfPl00nuaR"
+							},
+							"name": "Innate Attack (Corrosion)",
+							"reference": "B61,P53,MA45",
+							"tags": [
+								"Advantage",
+								"Exotic",
+								"Physical"
+							],
+							"modifiers": [
+								{
+									"id": "mmrK7KnpMLFltRA8t",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 sec",
+									"levels": 1,
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "m4kl5L5LqrsmBYHfV",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "10 sec",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mtnMmMDZGD2lbapGo",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 min",
+									"levels": 1,
+									"cost": 40,
+									"disabled": true
+								},
+								{
+									"id": "m7XqzhgWz5SfxjV3d",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 hr",
+									"levels": 1,
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mwo2WFRUIBfrtfj3k",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 day",
+									"levels": 1,
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mapcIXQzVyly2VP2j",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 sec; Resistible",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mknLGCESZiv6wfB-Q",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "10 sec; Resistible",
+									"levels": 1,
+									"cost": 25,
+									"disabled": true
+								},
+								{
+									"id": "m_zRWS1GZe4_5wBfb",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 min; Resistible",
+									"levels": 1,
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mZul6unUrm4ELv_vr",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 hr; Resistible",
+									"levels": 1,
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "mSU-bPXWnFs5EiHP9",
+									"name": "Cyclic",
+									"reference": "B103",
+									"notes": "1 day; Resistible",
+									"levels": 1,
+									"cost": 5,
+									"disabled": true
+								},
+								{
+									"id": "mc0zLegd4p4wJ9HME",
+									"name": "Contagious",
+									"reference": "B103",
+									"notes": "Mildly",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mfMUXHE4VcHVntjaA",
+									"name": "Contagious",
+									"reference": "B103",
+									"notes": "Highly",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "m56cs5ge2Z0jzBcDj",
+									"name": "Double Blunt Trauma",
+									"reference": "B104",
+									"notes": "1HP per 10 dmg",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mG9HCYWcpKa-EtAuY",
+									"name": "Explosion",
+									"reference": "B104",
+									"levels": 1,
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mA7Yopadm1ccsjRMc",
+									"name": "Fragmentation",
+									"reference": "B104",
+									"levels": 1,
+									"cost": 15,
+									"disabled": true
+								},
+								{
+									"id": "mLQZTq_xsvG7eTuDB",
+									"name": "Fragmentation",
+									"reference": "B104",
+									"notes": "Hot",
+									"levels": 1,
+									"cost": 15,
+									"disabled": true
+								},
+								{
+									"id": "msEqmKZVOynJ6ktQQ",
+									"name": "Surge",
+									"reference": "B104",
+									"cost": 20,
+									"disabled": true
+								},
+								{
+									"id": "mX_9Y-hR7EvGyszgQ",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "2",
+									"cost": 50,
+									"disabled": true
+								},
+								{
+									"id": "mDol1RcO-jKEV6FyO",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "3",
+									"cost": 100,
+									"disabled": true
+								},
+								{
+									"id": "mBYA3GmXLLPlFXdXg",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "5",
+									"cost": 150,
+									"disabled": true
+								},
+								{
+									"id": "mjSFM-Pqe-Me7oG-C",
+									"name": "Armor Divisor",
+									"reference": "B102",
+									"notes": "10",
+									"cost": 200
+								},
+								{
+									"id": "mRvOjlm22833tu3w1",
+									"name": "Side Effect",
+									"reference": "B109",
+									"notes": "@Effect@",
+									"disabled": true
+								},
+								{
+									"id": "mfi6m9GHwmUYJzcxk",
+									"name": "Symptoms",
+									"reference": "B109",
+									"notes": "@Effect@",
+									"disabled": true
+								},
+								{
+									"id": "m9t8kN1kU5tTxZh3Z",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.5",
+									"cost": -30,
+									"disabled": true
+								},
+								{
+									"id": "m9Hz9pvzKxdxzG2If",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.2",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "mGUqC0mlbVWyBIvp4",
+									"name": "Armor Divisor",
+									"reference": "B110",
+									"notes": "0.1",
+									"cost": -70,
+									"disabled": true
+								},
+								{
+									"id": "mKkQtvpCxxbYTxzfC",
+									"name": "No Wounding",
+									"reference": "B111",
+									"cost": -50,
+									"disabled": true
+								},
+								{
+									"id": "miIRI9NhUSnZcRu85",
+									"name": "Incendiary",
+									"reference": "B104",
+									"cost": 10,
+									"disabled": true
+								},
+								{
+									"id": "moUWqZz0aFos_9i95",
+									"name": "Melee Attack",
+									"reference": "B112,P103",
+									"notes": "Reach C",
+									"cost": -30
+								},
+								{
+									"id": "mItLeZMZmSyiMGljF",
+									"name": "Nanotech",
+									"notes": "Precisa de DCN para ser utilizado, vulnerável a medidas anti-nanite",
+									"cost": -10
+								},
+								{
+									"id": "mKlMkFhjedIVrYzBy",
+									"name": "Requires Grapple",
+									"cost": -10
+								}
+							],
+							"points_per_level": 10,
+							"weapons": [
+								{
+									"id": "wFpQNh-WT8Yhwd5yo",
+									"damage": {
+										"type": "cr",
+										"base": "1d-2"
+									},
+									"reach": "1",
+									"calc": {
+										"damage": "1d-2 cr"
+									}
+								}
+							],
+							"can_level": true,
+							"levels": 0.4,
+							"calc": {
+								"points": 10
+							}
+						}
+					],
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 186
+			}
+		},
+		{
+			"id": "TELcxbJ09bXWl9O7B",
+			"name": "Dimensional Control",
+			"children": [
+				{
+					"id": "tRDcdsC-LhZY4gB-4",
+					"name": "Dimensional Control Talent",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Power"
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "TLiIEIRllPm6hHx4k",
+			"name": "Metamateriality",
+			"children": [
+				{
+					"id": "tVDCK_1HBQV3kHiDO",
+					"name": "Metamateriality Talent",
+					"tags": [
+						"Advantage",
+						"Mental",
+						"Power"
+					],
+					"points_per_level": 10,
+					"can_level": true,
+					"levels": 1,
+					"calc": {
+						"points": 10
+					}
+				}
+			],
+			"calc": {
+				"points": 10
+			}
+		}
+	]
+}
